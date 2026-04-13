@@ -1,0 +1,83 @@
+# .gitignore
+
+```gitignore
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+
+# Logs
+*.log
+logs/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Streamlit cache
+.streamlit/
+.streamlit_cache/
+
+# Model files & checkpoints
+models/__pycache__/
+
+# Data files (large CSV/datasets)
+data/*.csv
+*.csv
+# Results and reports (generated)
+results/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS generated files
+*.swp
+.project
+.pydevproject
+
+# Cache and temporary
+*.cache
+*.tmp
+*.temp
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Testing
+.tox/
+
+# Mac files
+.AppleDouble
+.LSOverride
+```

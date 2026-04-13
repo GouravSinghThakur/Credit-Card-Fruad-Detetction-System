@@ -48,8 +48,8 @@ dist/
 models/__pycache__/
 
 # Data files (large CSV/datasets)
-data/*.csv
-*.csv
+# data/*.csv
+# *.csv
 # Results and reports (generated)
 results/
 

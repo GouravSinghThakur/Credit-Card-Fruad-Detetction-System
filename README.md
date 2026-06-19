@@ -173,6 +173,6 @@ Tracked Metrics:
 
 **Gourav Singh Thakur**
 
-Data Scientist | Machine Learning Engineer
-
+**Data Scientist
+**
 **⭐ If you find this project helpful, please star it on GitHub!**

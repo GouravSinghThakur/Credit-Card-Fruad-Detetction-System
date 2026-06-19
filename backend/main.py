@@ -27,19 +27,23 @@ def home():
 
 # Prediction endpoint
 @app.post("/predict")
-def predict(transaction: Transaction):
+def predict(data: dict):
 
-    features = np.array(transaction.features).reshape(1, -1)
+    features = np.array(
+        data["features"]
+    ).reshape(1, -1)
 
-    # scale features
     features_scaled = scaler.transform(features)
 
-    # predict probability
-    probability = model.predict(features_scaled)[0][0]
+    prediction = int(
+        model.predict(features_scaled)[0]
+    )
 
-    prediction = "Fraud" if probability > 0.7 else "Normal"
+    probability = float(
+        model.predict_proba(features_scaled)[0][1]
+    )
 
     return {
         "prediction": prediction,
-        "probability": float(probability)
+        "probability": probability
     }

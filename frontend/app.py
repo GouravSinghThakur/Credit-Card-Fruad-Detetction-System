@@ -21,7 +21,7 @@ if st.button("Predict Transaction"):
 
     try:
         response = requests.post(
-            "http://127.0.0.1:8000/predict",
+            "https://credit-card-fruad-detetction-system.onrender.com/",
             json={"features": features}
         )
 

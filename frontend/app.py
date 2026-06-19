@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import numpy as np
-API_URL = "https://credit-card-fruad-detetction-system.onrender.com/predict"
+API_URL = "https://credit-card-fruad-detetction-system.onrender.com/"
 # Page configuration
 st.set_page_config(page_title="Fraud Detection", layout="wide")
 st.title("Credit Card Fraud Detection System")

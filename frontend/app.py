@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
 import numpy as np
-API_URL = "https://credit-card-fruad-detetction-system.onrender.com/"
+API_URL = "https://credit-card-fruad-detetction-system.onrender.com/predict"
 # Page configuration
-st.set_page_config(page_title="Fraud Detection") #layout="wide")
+st.set_page_config(page_title="Fraud Detection" ,layout="wide")
 st.title("Credit Card Fraud Detection System")
 st.write("Enter transaction feature values to predict whether a transaction is fraudulent.")
 # Create input fields

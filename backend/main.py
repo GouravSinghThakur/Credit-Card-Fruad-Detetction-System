@@ -6,8 +6,7 @@ import joblib
 # Initialize API
 app = FastAPI(
     title="Fraud Detection API",
-    description="API for credit card fraud prediction",
-    version="1.0"
+    description="API for credit card fraud prediction"
 )
 
 # Load model and scaler

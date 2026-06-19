@@ -24,3 +24,5 @@ if st.button("Predict Transaction"):
         st.write(f"Fraud Probability: {result['probability']:.4f}")
     except:
         st.warning("API not running. Please start the FastAPI backend.")
+if __name__ == "__main__":
+    st.write("Developed BY Gourav Singh Thakur")

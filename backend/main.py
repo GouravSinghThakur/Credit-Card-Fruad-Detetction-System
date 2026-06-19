@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import numpy as np
 import joblib
-from tensorflow.keras.models import load_model
 
 # Initialize API
 app = FastAPI(
@@ -12,7 +11,7 @@ app = FastAPI(
 )
 
 # Load model and scaler
-model = load_model("../models/fraud_detection_pipeline.pkl")
+model = joblib.load("../models/fraud_detection_pipeline.pkl")
 scaler = joblib.load("../models/scaler.pkl")
 
 

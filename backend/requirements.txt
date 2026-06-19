@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 streamlit
-tensorflow
+xgboost
 numpy
 joblib
 requests

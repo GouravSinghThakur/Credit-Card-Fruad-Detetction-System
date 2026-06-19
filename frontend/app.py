@@ -18,10 +18,11 @@ for i in range(30):
 
 # Prediction button
 if st.button("Predict Transaction"):
+    API_URL = "https://credit-card-fruad-detetction-system.onrender.com/predict"
 
     try:
         response = requests.post(
-            "https://credit-card-fruad-detetction-system.onrender.com/predict",
+            API_URL,
             json={"features": features}
         )
 

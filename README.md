@@ -91,11 +91,14 @@ The system leverages XGBoost with SMOTETomek resampling to address severe class 
 SHAP (SHapley Additive Explanations)
 
 Generated Visualizations:
+
 * ROC Curve
-  <img width="600" height="400" alt="roc_curve" src="https://github.com/user-attachments/assets/62a31621-3644-4269-ac05-7d43a761c6c0" />
+  <img width="300" height="100" alt="roc_curve" src="https://github.com/user-attachments/assets/62a31621-3644-4269-ac05-7d43a761c6c0" />
+
 
 * Precision-Recall Curve
   <img width="600" height="400" alt="pr_curve" src="https://github.com/user-attachments/assets/2a302c1c-3cdf-4448-bb52-a76bbe61d23c" />
+
 
 * Precision-Recall Tradeoff Curve
   <img width="800" height="400" alt="pr_tradeoff" src="https://github.com/user-attachments/assets/57f4235c-af68-48ce-a8a3-44fed9d6fc1c" />

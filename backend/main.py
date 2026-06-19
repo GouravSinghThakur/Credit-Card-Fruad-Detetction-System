@@ -12,7 +12,7 @@ app = FastAPI(
 )
 
 # Load model and scaler
-model = load_model("../models/fraud_detection_model.keras")
+model = load_model("../models/fraud_detection_pipeline.pkl")
 scaler = joblib.load("../models/scaler.pkl")
 
 
@@ -39,7 +39,7 @@ def predict(transaction: Transaction):
     # predict probability
     probability = model.predict(features_scaled)[0][0]
 
-    prediction = "Fraud" if probability > 0.5 else "Normal"
+    prediction = "Fraud" if probability > 0.7 else "Normal"
 
     return {
         "prediction": prediction,
